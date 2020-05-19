@@ -1,0 +1,66 @@
+
+
+@import "bourbon";
+
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+$c-black: #111;
+$c-white: #fff;
+$c-blues: #2980B9, #0074D9, #009FE3;
+$c-greys: #343C3F, #A2ACB0, #D9E1E4;
+$c-greens: #27AE60, #2ECC40, #01FF70;
+$c-reds: #C0392B, #FF4136, #E74C3C;
+$c-yellows: #F39C12, #FCA624, #F1C40F;
+$c-purples: #532E62, #8E44AD, #9B59B6;
+
+* {
+  box-sizing: border-box;
+}
+
+.Message {
+  height: auto;
+  margin: 10px auto;
+  position: relative;
+  background-color: #0074D9;
+  width: 90%;
+  max-width: 95%;
+  color: #fff;
+  word-wrap: break-word;
+  transform-origin: right;
+  -webkit-animation: notify 3s ease-in;
+  //animation: notify 3s ease-in-out infinite;
+  //transition: all 0.2s ease;
+}
+.Message-body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  overflow: hidden;
+}
+.Message--orange {
+  background-color: $c-yellows;
+}
+
+.Message--red {
+  background-color: $c-reds, 2
+}
+
+.Message--green {
+  background-color: $c-greens, 2
+}
+
+
+.u-italic {
+  font-style: italic;
+}
+
+@-webkit-keyframes notify {
+  0% {transform: scaleX(0);}
+  10% {transform: scaleX(1);}
+  13% {transform: scale(1.1);}
+  16% {transform: scale(1);}
+  55% {transform: scaleX(1); border-radius: 0%;}
+  65% {transform: scaleX(0); border-radius: 50%;}
+  95% {transform: scaleX(0); border-radius: 50%;}
+}
