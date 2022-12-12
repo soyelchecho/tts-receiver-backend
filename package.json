@@ -16,7 +16,7 @@
     "body-parser": "^1.19.0",
     "bufferutil": "4.0.1",
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "get-audio-duration": "^1.0.0",
     "howler": "^2.1.2",
